@@ -1,0 +1,12 @@
+body{
+    background-color: lightyellow ;
+}
+h1{
+    background-color: lightslategray;
+    color: midnightblue;
+    text-align: center ;
+    font-size: 50px;
+    text-shadow: 2px 2px whitesmoke;
+    padding: 40px;
+    border-style: double;
+}
