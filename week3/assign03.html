@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+  <style>
+ ul.a {
+  list-style-position: outside;
+}
+
+h2 {
+
+text-align: center;
+
+}
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+ .navbar a{
+   width: 100%;
+ }
+}
+  </style>
+
+  <title>Pablo Acuna's assignments</title>
+</head>
+<body>
+
+<div class="h1">
+<a href="assign03.html">
+
+</a> 
+<h1>Welcome to Week 03</h1>
+</div>
+
+<div class="navbar">
+    
+    <a href="./ninja.html">Ninja Quiz</a>
+    <a href="./events.html">Events Examples</a>
+    <a href="./">Team Activities</a>
+</div>
+
+
+ <h2>Notes</h2>
+
+ <div class="h2">
+  <header>
+  <h2>Which is more popular, even listeners or function calls?</h2>
+
+  </header>
+  </div>
+  
+  <div class = "flex-container2">
+  <div class= h3>
+  <h3>Article Object Method: "this"</h3>
+  <ul>
+    <li>Objects = created to represent entities of the real world.</li>
+    <li>Actions are represented in JavaScript by functions in properties. </li>
+    <li>A function that is a property of an object is called its method. </li>
+    <li>There exists a shorter syntax for methods in an object. </li>
+    <li>Shorter syntax is preferred. </li>
+    <li>To access the object, a method can use the “this” keyword. </li>
+    <li>“This” can be used in any function, even if it’s not a method of an object. </li>
+    <li>Arrow functions have no “this”.</li>
+    </ul>
+  
+    </div> 
+  </div>
+
+  <div class = "flex-container3">
+    <div class= "h4">
+   <h4>Ch5: Objects</h4>
+   <ul>
+    <li>An object in JavaScript is a self-contained set of related values and functions. They act as a collection of named properties that map to any JavaScript value such as strings, numbers, Booleans, arrays and functions. If a property’s value is a function, it is known as a method.</li>
+    <li>Objects are often used to keep any related information and functionality together in the same place
+    <li>An object literal is an object that is created directly in the language by wrapping all its properties and methods in curly braces {}. Object literals are a distinguishing feature of the JavaScript language, as they allow objects to be created quickly without the need for defining a class.</li>
+    <li>To create an object literal, simply enter a pair of curly braces. </li>
+    <li>You can access the properties of an object using the dot notation.</li>
+    <li>Dot notation is much more common, but bracket notation has a few advantages: it's the only way to access nonstandard property and method names that don’t follow the variable naming rules.</li>
+    <li>The ability to create objects with computed property keys was introduced in ES6. This means that JavaScript code can be placed inside square brackets and the property key will be the return value of that code. </li>
+    <li>To call an object’s method we can also use dot or bracket notation.</li>
+    <li>The “in” operator can be used to check whether an object has a particular property.</li>
+    <li>We can loop through all of an object’s properties and methods by using a “for in” loop. </li>
+    <li>New properties and methods can be added to objects at any time in a program.</li>
+    <li>You can change the value of an object’s properties at any time using assignment.</li>
+    
+  </ul>
+    </div>
+    </div>
+
+  <div class = "flex-container4">
+  <div class= "h5">
+  <h4>CH6: The Document Object Model </h4>
+  <ul>
+    <li>The Document Object Model, or DOM for short, represents an HTML document as a network of connected nodes that form a tree-like structure.</li>
+    <li>The DOM treats everything on a web page as a node. HTML tags, the text inside these tags, even the attributes of a tag are all nodes. The HTML tag is the root node, and every other part of the document is a child node of this.</li>
+    <li>The DOM is not actually part of JavaScript because it is language agnostic. It can be used by any programming language.</li>
+    <li>The DOM provides several methods that allow us to access any element on a page.</li>
+    <li>There are some methods from DOM Level 0 that can still be employed to access commonly used elements.</li>
+    <li>The “getElementById()” method does exactly what it says on the tin. It returns a reference to the element with a unique id attribute that is given as an argument.</li>
+    <li>“getElementByTagName()” will return a live node list of all the elements with the tag name that is provided as an argument. </li>
+    <li>The “document.querySelector()” method allows you to use CSS notation to find the first element in the document that matches that matches a CSS selector provided as an argument. If no elements match, it will return null.</li>
+    <li>Node objects have a number of properties and methods for navigating around the document tree.</li>
+
+
+ </ul>
+  </div>
+  </div>
+
+  <div class = "flex-container5">
+  <div class="h6">
+    <h6>CH 7: EVents</h6>
+ <ul>
+  <li>Event listeners are added to elements on the page.</li>
+  <li>Event listeners:  They are like setting a notification to alert you when something happens.</li>
+  <li>The original way of dealing with events in the browser was to use inline attributes that were added directly into the markup.</li>
+  <li>Another method is to use the event handler properties that all node objects have. These can be assigned to a function that would be invoked when the event occurred.</li>
+  <li>The recommended way of dealing with events, and the current standard, is to use event listeners.</li>
+  <li>The “target” property returns a reference to the node that fired the event.</li>
+  <li>An event listener can be removed using the “removeEventListener()” method.</li>
+  <li>Event delegation can be used to attach an event listener to a parent element in order to capture events that are triggered by its child elements.</li>
+  
+</ul>
+  </div>
+  </div>
+
+      <div class="footer">
+      <p>Copyright 2020</p>
+      </div>
+
+
+</body>
+</html>

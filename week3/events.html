@@ -1,0 +1,51 @@
+<!doctype html>
+<html lang='en'>
+<head>
+<meta charset='utf-8'>
+<title>Events Examples</title>
+<style>
+    p {
+        width: 200px;
+        height: 200px;
+        margin: 10px;
+        background-color: #ccc;
+        float: left;
+    }
+    .highlight {
+        background-color: blue;
+    }
+</style>
+</head>
+<body>
+<p id='click'>Click On Me</p>
+<p id='dblclick'>Double Click On Me</p>
+<p id='mouse'>Hover On Me</p>
+<p id='once'>A One Time Thing...</p>
+
+<script>
+const clickParagraph = document.getElementById('click');
+clickParagraph.addEventListener('click',() => console.log('click') );
+clickParagraph.addEventListener('mousedown',() => console.log('down') );
+clickParagraph.addEventListener('mouseup',() => console.log('up') );
+
+
+const dblclickParagraph = document.getElementById('dblclick');
+dblclickParagraph.addEventListener('dblclick', highlight);
+function highlight(event){
+    event.target.classList.toggle('highlight');
+    
+const mouseParagraph = document.getElementById('mouse');
+mouseParagraph.addEventListener('mouseover', highlight);
+mouseParagraph.addEventListener('mouseout', highlight);
+
+const onceParagraph = document.getElementById('once');
+onceParagraph.addEventListener('click', remove);
+function remove(event) {
+    console.log('Enjoy this while it lasts!');
+    onceParagraph.style.backgroundColor = 'pink';
+    onceParagraph.removeEventListener('click',remove);
+}
+}
+</script>
+</body>
+</html>
