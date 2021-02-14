@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>Story Writer</title>
+<script>
+function loadStory(){
+
+    var storyName= document.getElementById("name_input").value
+    var storyHTML= document.getElementById(storyName)
+    document.getElementById("story_editor").value= storyHTML
+    
+    }
+function saveStory(){
+
+    var storyName= document.getElementById("name_input").value
+    var storyHTML= document.getElementById("story_editor").value
+    localStorage.setItem(storyName, storyHTML)
+    }
+function displayStory(){
+
+    var storyHTML= document.getElementById("story_editor").value
+    document.getElementById("story_display").innerHTML= storyHTML
+    }
+ 
+
+</script>
+
+<style>
+
+body{
+background-image: url("leather_background.jpg");
+
+}
+
+h1{
+color: rgb(238, 234, 227);
+text-align: center;
+font-size: 60px;
+font-family: Arial, Helvetica, sans-serif;
+text-shadow: 2px 2px rgb(36, 31, 31);
+text-decoration: underline;
+
+}
+textarea{
+ border-radius: 20px;
+ width:800px;
+ height: 350px;
+ background-color:rgb(245, 173, 114);
+ }
+.middle{
+
+    text-align: center;
+}
+
+.middle p{
+ color: rgb(36, 32, 31);
+ font-size:25px;
+ font-weight: bolder;
+ text-decoration: underline;
+
+}
+.middle section{
+ color: snow;
+
+}
+
+
+</style>
+
+</head>
+<body>
+<h1>Story Editor</h1>
+<div class="middle">
+ <p>Story Name:</p>
+ <input id=name_input> <input>
+ <section>
+     <button onclick="loadStory()">Find and Edit it</button>
+     <button onclick="saveStory()">Save it</button>
+     <button onclick="displayStory()">Display it</button>
+     <input type="reset" value="Reset">
+     </section>
+ <br>
+ <textarea id="story_editor" placeholder="Write a totally awesome story here."></textarea>
+ 
+ <section id="story_display"></section>
+</div>
+
+ 
+
+</body>
+</html>
