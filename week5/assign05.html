@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+  <style>
+
+    .b ul{
+      color: cornsilk;
+      font-size: 17px;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: rgb(8, 88, 88);
+      padding: 30px;
+      border: 3px solid #06fa06;
+
+    }
+
+
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+ .navbar a{
+   width: 100%;
+ }
+}
+  </style>
+
+  <title>Pablo Acuna's assignments</title>
+</head>
+<body>
+
+<div class="h1">
+<a href="assign05.html">
+
+</a> 
+<h1>Welcome to Week 05</h1>
+</div>
+
+<div class="navbar">
+    
+        <a href="./ninja.html">Ninja Quiz with console.log</a>
+        <a href="./">Team Activities</a>
+        
+</div>
+
+
+ <h2>Notes</h2>
+
+ 
+ 
+ <div class = "b">
+   <h3>Ch 10: Testing and Debugging</h3>
+ <ul >
+    <li>Errors are caused when something goes wrong in a program.</li>
+  	<li>System error: there’s a problem with the system or external devices with which the program is interacting.</li>
+  	<li>Programmer error: the program contains incorrect syntax or faulty logic; it could even be as simple as a typo.</li>
+  	<li>User error: the user has entered data incorrectly, which the program is unable to handle.</li>
+  	<li>An exception is an error that produces a return value that can then be used by the program to deal with the error.</li>
+  	<li>An exception will also produce a stack trace. This is a sequence of functions or method calls that lead to the point where the error occurred.</li>
+  	<li>A warning can occur if there’s an error in the code that isn't enough to cause the program to crash.</li>
+  	<li>ECMAScript 5 introduced a strict mode that produces more exceptions and warnings and prohibits the use of some deprecated features. </li>
+    <li>Not using strict mode is often referred to as 'sloppy mode' as it’s forgiving of sloppy programming practices.</li>
+    <li>Linting tools such as JS Lint, JS Hint, and ES Lint can be used to test the quality of JavaScript code, beyond simply using strict mode.</li>
+    <li>Modernizr is a library that offers an easy way to implement feature detection.</li>
+    <li>Debugging is the process of finding out where bugs occur in the code and then dealing with them.</li>
+    <li>The most basic form of debugging is to use the alert () method to show a dialog at certain points in the code. </li>
+    <li>Most modern browsers also have a debugging tool that allows you to set break points in your code that will pause it at certain points. </li>
+    <li>An “error” object can be created by the host environment when an exception occurs, or it can be created in the code using a constructor function.</li>
+    <li>All “error” objects have a number of properties, but they’re often used inconsistently across browsers. </li>
+    <li>The “throw” statement can be applied to any JavaScript expression, causing the execution of the program to stop</li>
+    <li>The code inside the “catch block will only run if an exception is thrown inside the “try” block. The error object is automatically passed as a parameter to the “catch” block. </li>
+    <li>Test-driven development (TDD) is the process of writing tests before any actual code.</li>
+    <li>Jest is a TDD framework, created by Facebook, that has gained a lot of popularity recently. It makes it easy to create and run tests by providing helper methods for common test assertions.</li>
+  
+ </ul>
+</div>
+
+
+</body>
+</html>
