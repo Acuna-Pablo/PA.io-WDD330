@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+  <style>
+ ul.a {
+  list-style-position: outside;
+}
+
+h2 {
+
+text-align: center;
+
+}
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+ .navbar a{
+   width: 100%;
+ }
+}
+  </style>
+
+  <title>Pablo Acuna's assignments</title>
+</head>
+<body>
+
+<div class="h1">
+<a href="assign04.html">
+
+</a> 
+<h1>Welcome to Week 04</h1>
+</div>
+
+<div class="navbar">
+    
+        <a href="./hero.html">Make Your Own SuperHero</a>
+        <a href="./ninja.html">Ninja Quiz</a>
+        <a href="./">Team Activities</a>
+</div>
+
+
+ <h2>Notes</h2>
+
+  <div class = "flex-container2">
+  <div class= h3>
+  <h3>Ch 8: Forms</h3>
+  <ul>
+      <li>Forms are made up of a "form" element that contains form controls such as input fields, select menus and buttons. These input fields can be populated with information that is processed once the form has been submitted.</li>
+      <li>It’s possible, and becoming more and more common, to process the information in a form on the 'front end’ before it is sent to the server using JavaScript.</li>
+      <li>Each form control has an initial value that can be specified in the HTML code. This value can be changed by a user entering information or interacting with the form’s interface (such as using a slider to increase or decrease a value). The value can also be changed dynamically using JavaScript.</li>
+      <li>The legacy DOM had a useful property called document.form that return an HTML collection of all the forms in the document in the order they appear in the markup.</li>
+      <li>the document. form object doesn't have many properties or methods</li>
+      <li>A form object also has a method called elements that returns an HTML collection of all the elements contained in the form.</li>
+      <li>Form objects have a number of useful properties and methods that can be used to interact with the form.</li>
+      <li>The form.submit() method will submit the form automatically.</li>
+      <li>A form can be submitted manually by the user employing a button or input element with a type attribute of submit, or even an input element with a type attribute of. Image.</li>
+      <li>The focus event occurs when an element is focused on.</li>
+      <li>The blur event occurs when the user moves the focus away from the form element.</li>
+      <li>Possibly the most important form event is the submit event, occurring when the form is submitted. Usually this will send the content of the form to the server to be processed, but we can use JavaScript to intercept the form before it’s sent by adding a submit event listener.</li>
+      <li>Text input element objects have a value property that can be used to retrieve the text inside the field.</li>
+      <li>The default type of input field is text.</li>
+      <li>Input type= “password” is used to enter passwords or secret information.</li>
+      <li>Check boxes are created using input fields with type= “checkbox”</li>
+      <li>Radio buttons are created using input fields with type='radio’.</li>
+      <li>A "textarea" element is used to enter long pieces of text over multiple lines such as a comment or blog post.</li>
+      
+    </ul>
+  
+    </div> 
+  </div>
+
+  <div class = "flex-container3">
+    <div class= "h4">
+   <h4>Ch 12: Objected Oriented Programming</h4>
+   <ul>
+      <li>Object-oriented programming is often used to model representations of objects in the real world. There are three main concepts in OOP: encapsulation, polymorphism and inheritance.</li>
+      <li>Encapsulation:  In OOP, this involves keeping all the programming logic inside an object and making methods available to implement the functionality, without the outside world needing to know how it’s done.</li>
+      <li>Polymorphism:  the same process can be used for different objects. In OOP, this means various objects can share the same method, but also have the ability to override shared methods with a more specific implementation.</li>
+      <li>Inheritance:  taking the features of one object then adding some new features. In OOP, this means we can take an object that already exists and inherit all its properties and methods. We can then improve on its functionality by adding new properties and methods.</li>
+      <li>An alternative way to create objects is to use a constructor function.</li>
+      <li>The keyword “this” is used to represent the object that will be returned by the constructor function.</li>
+      <li>We can use the “constructor” property to instantiate a copy of an object, without having to reference the actual constructor function or class declaration directly.</li>
+      <li>The “static” keyword can be used in class declarations to create a static method.</li>
+
+    
+  </ul>
+    </div>
+    </div>
+
+  <div class = "flex-container4">
+  <div class= "h5">
+  <h4>CH 15: Modern JavaScript</h4>
+  <ul>
+    <li>A module is a self-contained piece of code that provides functions and methods that can then be used in other files and by other modules. 
+      This helps to keep code organized in separate, reusable files, which improves code maintainability. The code in a module should have a single purpose, 
+      and group together functions with distinct functionality.</li>
+    <li>Modules also allow a public API to be exposed, while keeping the implementation hidden away inside the module.</li>
+    
+ </ul>
+  </div>
+  </div>
+
+  
+
+      <div class="footer">
+      <p>Copyright 2020</p>
+      </div>
+
+
+</body>
+</html>
