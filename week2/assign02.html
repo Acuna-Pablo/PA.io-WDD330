@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+  <style>
+
+  .h2{ 
+  font-size: 24px;
+  text-align: center;
+  
+}
+
+/* Create three equal columns that floats next to each other */
+.column {
+ float: left;
+ width: 32%;
+ padding: 10px;
+}
+
+/* Clear floats after the columns */
+.row:after {
+ content: "";
+ display: table;
+ clear: both;
+}
+
+
+.column {
+  color: rgb(4, 42, 75);
+   font-size: 17px;
+   background-color: rgb(168, 199, 235);
+   padding: 10px;
+   margin: 10px;
+   font-family:-apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
+   border: 1px black
+   
+     
+
+    }
+
+/* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+ .column {
+   width: 100%;
+   
+ }
+}
+.column h3{
+ color: #160d0d;
+ text-align: center;
+}
+
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+ @media screen and (max-width:600px) {
+ .navbar a{
+   width: 100%;
+ }
+}
+
+  </style>
+
+  <title>Pablo Acuna's assignments</title>
+</head>
+<body>
+
+<div class="h1">
+<a href="assign02.html">
+
+</a> 
+<h1>Welcome to Week 02</h1>
+</div>
+
+<div class="navbar">
+    
+        <a href="./ninja.html">Ninja Quiz</a>
+        <a href="./">Team Activities</a>
+</div>
+
+
+ 
+
+<div class = "h2">
+ <h2><u>Notes</u></h2>
+</div>
+
+<div class="row">
+
+<div class="column">
+  
+  <h3>Ch2: Programming Basics</h3>
+
+  <ul >
+    <li>Well commented code is the hallmark of a ninja programmer. </li>
+    <li>Two types of comments, // and /**/.</li> 
+    <li>JavaScript has similarities with the C programming languages. </li>
+    <li>JavaScript = Series of statements. </li> 
+    <li>Each statement ends with a new line or semicolon.</li>
+    <li>Block = Series of statements that are collected together inside curly braces, and do not need to 
+      be terminated by a semicolon. </li> 
+    <li>Words to not use as a variable in JavaScript: abstract, await, Boolean, break, byte, case, catch, char, class, const, etc. </li>
+    <li>Primitive Data Types: String, Symbol, Number, Boolean, Undefined and Null. </li> 
+    <li>Any value that is not primitive data types is an object.</li>
+    <li>Scope: Using const and let to declare variables means they are block scoped.</li> 
+    <li>Scope = where a constant or variable is accessible inside the block, they are declared in. </li>
+    <li>Global Scope: any variable declared outside of a block is said to have global scope, that means it is accessible 
+      everywhere in the program. </li> 
+    <li>Local Scope: That means that any variables defined inside a block using the let or const will only be available inside 
+      that block and not be accessible outside of that block. </li>
+    
+</ul>
+  
+</div>
+
+<div class="column">
+  
+  <h3>Ch3: Arrays, Logic, and Loops</h3>
+  
+  <ul>
+   <li>Arrays are not primitive values but built-in object.</li>
+   <li>We can use heroes to create an empty array.</li>
+   <li>Each item in an array can be treated like a variable. </li>
+   <li>We can create an array literal using square brackets that already 
+     contain some initial values</li>
+   <li>The delete operator will remove an item from an array.</li>
+   <li>Destructuring an array is the concept of taking values out of an array and 
+     presenting them as individual values. Destructuring allows us to assign multiple values at the same time</li>
+   <li>To remove the last item from an array, we can use the pop() method.</li>
+   <li>The shift() method works in a similar way to the pop() method, but this removes the first item in the array.</li>
+   <li>The push() method appends a new value to the end of the array.</li>
+   <li>The push() method appends a new value to the end of the array.</li>
+   <li>The unshift() method is similar to the push() method, but this appends a new item to the beginning of the array</li>
+   <li>The concat() method can be used to merge an array with one or more arrays.</li>
+   <li>A set can be converted into an array by placing the set, along with the spread operator directly inside an array literal.</li>
+   <li>An empty map object can be created using the new operator and Map() constructor.</li>
+
+  </ul>
+    
+</div>
+
+<div class="column">
+  
+  <h3>Ch4: Functions</h3>
+  
+  <ul>
+    <li>Function declaration.</li>
+    <li>Function Expressions.</li>
+    <li>A function can also be declared using the constructor function().</li>
+    <li>Invoking a function is to run the code inside the function’s body. To invoke a function, simply enter its name, followed by parentheses. </li>
+    <li>Any parameters a function needs are set when the function is defined. When a function is invoked, it is provided with arguments.</li>
+    <li>Every function has a special variable called arguments. </li>
+    <li>Arguments is not an array.</li>
+    <li>Hoisting is the JavaScript interpreter’s action of moving all variable and function declarations to the top of the current scope, regardless of where they are defined.</li>
+    <li>A function that is passed as an argument to another is known as a callback.</li>
+  
+  </ul>
+</div>
+
+</div>
+
+</body>
+</html>
