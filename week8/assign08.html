@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+  <style>
+
+    .b ul{
+      color: cornsilk;
+      font-size: 17px;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: rgb(8, 88, 88);
+      padding: 30px;
+      border: 3px solid #06fa06;
+
+    }
+    .img1{
+  float: left;
+  
+}
+
+
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+ .navbar a{
+   width: 100%;
+ }
+}
+  </style>
+
+  <title>Pablo Acuna's assignments</title>
+</head>
+<body>
+
+  <div class="img1">
+    <a href="../index.html">
+    <img src="home_logo.png" alt= "home_logo"> </a>
+    </div>
+
+<div class="h1">
+<a href="assign08.html">
+
+</a> 
+<h1>Welcome to Week 08</h1>
+</div>
+
+ <h2>Notes</h2>
+
+ 
+ 
+ <div class = "b">
+   <h3>Chapter 08: CSS3 Transforms & Transitions</h3>
+ <ul >
+    
+  <li>The CSS3 “transform” property lets you lets you translate, rotate, scale, and/or skew any element on the page. </li>
+  <li>We can manipulate an element’s appearance using transform functions.</li>
+  <li>Translation functions allow you to move elements left, right, up, or down. </li>
+  <li>Transforms don’t work on inline elements. But that’s easy enough to fix. We’ll just add display: inline-block; to our span.</li>
+  <li>The scale(x,y) function scales an element by the defined factors horizontally then vertically.</li>
+  <li>A scaled element will grow outwards from or shrink inwards towards its center; in other words, the element’s center will stay in the same place as its dimensions change.</li>
+  <li>The “rotate()“ function rotates an element around the point of origin by a specified angle value. </li>
+  <li>The skew(x,y) function specifies a skew along the x and y axes. </li>
+  <li>Transitions allow the values of CSS properties to change over time, essentially providing simple animations. </li>
+  <li>CSS transitions are declared along with the regular styles on an element.</li>
+  <li>The transition properties allow for multiple transitions in one call. </li>
+  <li>Transitions animate elements over time; however, they’re limited in what they can do.</li>
+  <li>A keyframe is a snapshot that defines a starting or end point of any smooth transition.</li>
+
+ </ul>
+</div>
+
+
+<div class = "b">
+    <h3>Ch 12:Canvas, SVG, and Drag and Drop  </h3>
+  <ul >
+
+  <li>Canvas was first developed by Apple.  </li>
+  <li>The canvas element takes both a width and height attribute, which must also be set. </li>
+  <li>If we don’t specify width and height, the canvas element will default to a width of 300 and a height of 150.  </li>
+  <li>All drawing on the canvas happens via the Canvas JavaScript API.   </li>
+  <li>On a real-life painting canvas, you must first saturate your brush with paint before you can begin. In the HTML5 canvas, you must do the same, and we do so with the strokeStyle or fillStyle properties.  </li>
+
+  <li>Anonymous functions are much like regular functions except, as you might guess, they are without names.  </li>
+  <li>Paths create a blueprint for your lines, arcs, and shapes, but paths are invisible until we give them a stroke.  </li>
+  <li>Radians are a unit used to measure angles, and the symbol π denotes a measurement in radians. One radian is equal to 180 degrees  </li>
+
+  <li>“getImageData” will return an “ImageData” object, which contains three properties: width, height, and data. </li>
+  <li>“data” contains information about the pixels in the ImageData object in the form of an array.   </li>
+
+  <li>SVG stands for Scalable Vector Graphics, a specific file format that allows you to describe vector graphics using XML.   </li>
+
+  <li>We can use SVG to do many of the same tasks we can do with canvas, including drawing paths, shapes, text, gradients, and patterns. </li>
+  <li>XML stands for eXtensible Markup Language. Like HTML, it’s a markup metalanguage. In plain English, it’s a system meant to annotate text. Just as we can use HTML tags to wrap our content and give it meaning, so can XML tags be used to describe data, such as the content of a file. </li>
+  <li>Drawing a circle in SVG is arguably easier than drawing a circle with canvas.  </li>
+  <li>We can also draw rectangles in SVG, and add a stroke to them as we did with canvas.  </li>
+  <li>To make our progress spinner match our page a bit better, we can use a filter in Inkscape to make it black and white. Start by opening the file in Inkscape, then choose Filters > Color > Moonarize.  </li>
+  <li>Raphaëlis an open-source JavaScript library that makes drawing and animating with SVG much easier.  </li>
+  <li>Much as with canvas, you can draw images into a container that you create using Raphaël.  </li>
+  <li>Canvas allows for pixel manipulation, as we saw when we turned our video from color to black and white. One downside of canvas is that it operates in what’s known as immediate mode.  </li>
+  <li>SVG is accessible via the DOM, because its mode is retained mode, meaning that the structure of the image is preserved in the XML document that describes it.  </li>
+  <li>If you need to paint pixels to the screen and have no concerns about the ability to retrieve and modify your shapes, canvas is probably the better choice. If, on the other hand, you need to be able to access and change specific aspects of your graphics, SVG might be more appropriate. </li>
+  <li>DataTransfer objects are one type of object outlined in the Drag and Drop API.  </li>
+
+  </ul>
+</div>
+
+
+</body>
+</html>
