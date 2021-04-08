@@ -1,0 +1,65 @@
+
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Movie Search</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.1.1/jquery.min.js"></script>
+
+<script src="movie.js"></script>
+<link rel="preconnect" href="https://fonts.gstatic.com">
+<link href="https://fonts.googleapis.com/css2?family=New+Tegomin&display=swap" rel="stylesheet">
+
+<style>
+body{
+  font-family: 'New Tegomin', serif;
+  background-color: #101820FF;
+
+}
+
+.container {
+  text-align: center;
+  background-color: #F2AA4CFF;
+  color: #00203FFF;
+  width: 700px;
+  border-radius: 10px;
+  margin-left: auto;
+  margin-right: auto;
+
+
+}
+
+</style>
+
+</head>
+
+<body>
+
+  <div class="img1">
+    <a href="./initial.html">
+    <img src="home_logo.png" alt= "home_logo"> </a>
+    </div>
+   
+
+    <div class="container">
+     
+      <h1>Movie Search</h1>
+     <h2>Search By Title:</h2>
+           
+
+  <div class="find">
+    <input type="text" id="title"><br>
+    <button onclick="findMovie();">Find Movie</button>
+  </div>
+
+  <div id="outcome">
+    <h2>Search Results:</h2>
+    <div id="newData">
+    </div>
+
+  </div>
+  </div>
+    
+</body>
+</html>
