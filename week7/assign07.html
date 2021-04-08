@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+
+  <style>
+
+    .b ul{
+      color: cornsilk;
+      font-size: 17px;
+      font-family: 'Times New Roman', Times, serif;
+      background-color: rgb(8, 88, 88);
+      padding: 30px;
+      border: 3px solid #06fa06;
+
+    }
+  
+    .img1{
+  float: left;
+  
+}
+
+ /* Responsive layout - makes the three columns stack on top of each other instead of next to each other */
+@media screen and (max-width:600px) {
+ .navbar a{
+   width: 100%;
+ }
+}
+  </style>
+
+  <title>Pablo Acuna's assignments</title>
+</head>
+<body>
+
+  <div class="img1">
+    <a href="../index.html">
+    <img src="home_logo.png" alt= "home_logo"> </a>
+    </div>
+
+<div class="h1">
+<a href="assign07.html">
+
+</a> 
+<h1>Welcome to Week 07</h1>
+</div>
+
+<div class="navbar">
+    
+        <a href="./ninja.html">Ninja Quiz Invoking Shuffle Function, and Fetch API</a>
+        
+</div>
+
+
+ <h2>Notes</h2>
+
+ 
+ 
+ <div class = "b">
+   <h3>Ch 11: Further Functions</h3>
+ <ul >
+    <li>The fact that functions are first-class objects means they can have properties and methods themselves.</li>
+    <li>The “call()” method can be used to set the value of “this” inside a function to an object that is provided as the first argument.</li>
+    <li>If the function that’s called requires any parameters, these need to be provided as arguments after the first argument, which is always the value of “this”.</li>
+    <li>There is nothing to stop you adding your own properties to functions in the same way that you can add properties to any object in JavaScript.</li>
+    <li>An Immediately Invoked Function Expression– or IIFE – (pronounced 'iffy') is an anonymous function that, as the name suggests, is invoked as soon as it’s defined.  </li>
+    <li>There is no way to remove a variable from a scope once it’s been declared. If a variable is only required temporarily, it may cause confusion if it’s still available later in the code.</li>
+    <li>The dynamic nature of JavaScript means that a function is able to not only call itself, but define itself, and even redefine itself. </li>
+    <li>A recursive function is one that invokes itself until a certain condition is met. It’s a useful tool to use when iterative processes are involved. </li>
+    <li>Callbacks can be used to facilitate event-driven asynchronous programming. JavaScript is a single-threaded environment, which means only one piece of code will ever be processed at a time. This may seem like a limitation, but non-blocking techniques can be used to ensure that the program continues to run.</li>
+    <li>A promise is created using a constructor function. This takes a function called an executoras an argument. The executor initializes the promise and starts the asynchronous operation.</li>
+    <li>Async functions were added to the ES2017 specification. These functions are preceded by the async keyword and allow you to write asynchronous code as if it was synchronous. </li>
+    <li>A closure is formed when the inner function is returned by the outer function, maintaining access to any variables declared inside the enclosing function.</li>
+    <li>Pure functions help to make functional programming code more concise and predictable than in other programming styles. </li>
+    <li>Higher-order functions are functions that accept another function as an argument, or return another function as a result, or both.</li>
+    
+ </ul>
+</div>
+
+
+<div class = "b">
+    <h3>Ch 13: Ajax</h3>
+  <ul >
+  <li>Ajax enabled JavaScript to send requests and receive responses from a server, allowing content to be updated in real time.  </li>
+  <li>The Fetch API provides a global fetch() method that only has one mandatory argument, which is the URL of the resource you wish to fetch. </li>
+  <li>The “redirect()” method can be used to redirect to another URL. It creates a new promise that resolves to the response from the redirected URL.  </li>
+  <li>The” text()” method takes a stream of text from the response, reads it to completion and then returns a promise that resolves to a USVSting object that can be treated as a string in JavaScript.  </li>
+  <li>JSON is probably the most common format for AJAX responses. The json() method is used to deal with these by transforming a stream of JSON data into a promise that resolves to a JavaScript object. </li>
+  <li>We can get more fine-grained control over the request being made by providing a Request object as an argument. This allows a number of options to be set about the request. </li>
+  <li>We can also use Ajax to send information. This can be a variety of formats, but is usually a JSON string.  </li>
+  <li>The Fetch API includes the FormData interface, which makes it much easier to submit information in forms using Ajax. </li>
+ 
+  </ul>
+</div>
+
+
+</body>
+</html>
